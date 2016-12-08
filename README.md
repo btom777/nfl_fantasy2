@@ -1,1 +1,1 @@
-# nfl_fantasy2
+# nfl_fantasy

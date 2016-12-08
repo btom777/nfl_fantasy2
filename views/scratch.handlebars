@@ -1,0 +1,25 @@
+<div id="login_header">
+    <p>
+        {{#unless logged_in}}
+            <a href="/users/signin-signup">Sign In or Sign Up</a>
+        {{/unless}}
+
+        {{#if logged_in}}
+            <div>
+                <p>Welcome {{email}}! </p>
+                <p>You are user {{user_id}}.</p>
+                <button>Choose your Character!</button>
+            </div>
+        {{/if}}
+    </p>
+</div>
+
+{{#if logged_in}}
+
+{{/if}}
+
+{{#unless logged_in}}
+    <p>
+        You must login to add a person.
+    </p>
+{{/unless}}

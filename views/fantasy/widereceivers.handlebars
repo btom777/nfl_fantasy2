@@ -1,0 +1,147 @@
+ {{>nav}}
+<div class="m-12 bg-orange">
+    <div class="m-06 bg-orange">
+        <div class="m-06 bg-orange">
+            <form id="widereceiverSearch" action="widereceiver/search">
+                <label for="widereceiverInputLeft">
+                    <h3>Search widereceiver</h3></label>
+                <input type="text" id="widereceiverInputLeft">
+                <br>
+                <!-- This button will trigger our AJAX call -->
+                <input id="findWidereceiver" type="submit" value="Find Widereceiver">
+            </form>
+        </div>
+    </div>
+    <div class="m-06 bg-orange">
+        <div class="m-06 bg-orange">
+            <form id="widereceiverSearch" action="widereceiver/search">
+                <label for="widereceiverInputLeft">
+                    <h3>Search widereceiver</h3></label>
+                <input type="text" id="widereceiverInputRight">
+                <br>
+                <!-- This button will trigger our AJAX call -->
+                <input id="findWidereceiver" type="submit" value="Find Widereceiver">
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<div class="m-06">
+    <div class="module-content">
+        <div class="title-default">
+            <h2>Table Style 01</h2>
+        </div>
+        <!-- Module Title -->
+        <table class="table-scores">
+            <tr class="t-header">
+                <td colspan="5" class="score-date">Sat 5th Apr</td>
+            </tr>
+            <tr>
+                <td>FT</td>
+                <td>Man City</td>
+                <td><span>4-1</span></td>
+                <td>Southampton</td>
+                <td title="Online TV" title="Online TV"><a href="#"><i class="fa fa-desktop"></i></a></td>
+            </tr>
+            <tr>
+                <td>FT</td>
+                <td>QPR</td>
+                <td><span>5-2</span></td>
+                <td>Nottm Forest</td>
+                <td title="Online TV" title="Online TV"><a href="#"><i class="fa fa-desktop"></i></a></td>
+            </tr>
+            <tr class="t-header">
+                <td colspan="5" class="score-date">Sat 5th Apr</td>
+            </tr>
+            <tr>
+                <td>FT</td>
+                <td>Rangers</td>
+                <td><span>1-3</span></td>
+                <td>Dundee Utd</td>
+                <td title="Online TV" title="Online TV"><a href="#"><i class="fa fa-desktop"></i></a></td>
+            </tr>
+            <tr>
+                <td>12:45</td>
+                <td>Luton</td>
+                <td><span>0-0</span></td>
+                <td>Braintree</td>
+                <td title="Online TV" title="Online TV"><a href="#"><i class="fa fa-desktop"></i></a></td>
+            </tr>
+        </table>
+        <!-- Table Scores -->
+    </div>
+    <!-- Module Content -->
+</div>
+<!-- Module -->
+<div class="m-06">
+    <div class="module-content">
+        <div class="title-default">
+            <h2>Table Style 02</h2>
+        </div>
+        <!-- Module Title -->
+        <table class="table-scores">
+            <tr class="t-header">
+                <td>Pos</td>
+                <td>Team</td>
+                <td>P</td>
+                <td>Pts</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Man City</td>
+                <td>31</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Man City</td>
+                <td>25</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Man City</td>
+                <td>23</td>
+                <td>62</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Man City</td>
+                <td>21</td>
+                <td>59</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Man City</td>
+                <td>21</td>
+                <td>59</td>
+            </tr>
+        </table>
+        <!-- Table Scores -->
+    </div>
+    <!-- Module Content -->
+</div>
+<!-- Module -->
+<script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+<script type="text/javascript">
+// This .on("click") function will trigger the AJAX Call
+$('#widereceiverSearch').on('click', function() {
+
+    var widereceiverLeft = $('#widereceiverInputLeft').val();
+
+    // Here we assemble our URL
+    var queryURL = "http://api.fantasy.nfl.com/v1/players/stats?" + movie + "&y=&plot=short&r=json";
+
+    http: //api.fantasy.nfl.com/v1/players/stats?statType=seasonStats&season=2010&week=1&format=json
+
+
+        //------
+
+        // Write code between the dashes below to hit the queryURL with $ajax, then take the response data and display it in the div with an id of movieView
+        // YOUR CODE GOES IN THESE DASHES. DO NOT MANUALLY TOUCH THE HTML ABOVE.
+
+        //------
+
+        return false;
+})
+</script>
